@@ -24,6 +24,8 @@ Here are some examples of different elements  you can use in **Markdown**:
 
 Organize your content with expressive headings that capture attention and  structure your ideas effectively.
 
+## Examples
+
 - Create Informative links
 
 [OpenAI](https:example.com) - Discover the incredible  world of example and stay up to date with our latest advancements
@@ -65,16 +67,18 @@ or quoting external sources."
                     toggleEditorSize={toggleEditorSize}
                     isEditorLarge={isEditorLarge}
                 />
-                <div className={ isPreviewerLarge ? 'contain large' : ' contain small' }>
+                <div  className={ isPreviewerLarge ? 'contain large' : ' contain small' }>
                     <div className="heading">
                         <h2>Previewer</h2>
                         <button className="btn bi-arrows-angle-expand"
                             onClick={togglePreviewerSize}></button>
                     </div>
-                    <ReactMarkdown id='preview' className='p-4'
+                    <div id='preview'>
+                        <ReactMarkdown  className='p-4'
                         remarkPlugins={[remarkGfm]}>
                         { markdown }
-                    </ReactMarkdown>
+                        </ReactMarkdown>
+                    </div>
                 </div>
             </main>
             <Footer/>
