@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    background: #eeee;
+}
+.header{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background: #333;
+    color: #fff;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.control{
+    min-height: 500px;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+    outline: none;
+    border: none;
+}
+.btn{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.contain.large{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    margin: 50px 20px 0 20px;
+    max-width: 900px;
+    min-height: 500px;
+}
+.contain.small{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    margin: 50px 20px 0 20px;
+    max-width: 500px;
+    min-height: 300px;
+    overflow: auto;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #daa520;
+}
+.dev_link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3 ease;
+}
+.dev_link:hover{
+    color: #4040fd;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    height: 10vh;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
